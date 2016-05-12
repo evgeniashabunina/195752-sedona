@@ -1,7 +1,11 @@
 body {
     font-size: 14px;
     line-height: 21px;
-    font-family: PT Sans Regular;
+    font-family: "PT Sans", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    background: #ffffff;
 }
 
 h3 {
@@ -13,45 +17,118 @@ h3 {
 }
 
 .container {
-    width: 768px;
+    max-width: 1200px;
+    min-width: 768px;
     margin: 0 auto;
 }
 
+
 .main-navigation {
-    float: left;
-    width: 768px;
+    min-width: 768px;
+    max-width: 100%; 
 }
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+    
+  
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 21px;
+   width: 20%;  
+  margin: auto;   
+}
+
+.main-navigation a {
+    display: block;
+    font-weight: 700;
+    padding-top: 22px;
+    text-align: center;
+    vertical-align: bottom;
+    text-decoration: none;  
+    color: #000000;
+    
+}
+
+.logo a {
+    position: relative;
+    padding-top: 0;  
+    z-index: 2;
+}
+
 
 .content {
     background-color: #eeeeee;
 }
 
 .picture-block {
+    position: relative;
     background: url(/img/background%20photo.jpg);
     height: 510px;
-    width: 768px;
-    margin: 0 auto;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
+    background-color: #a5bac9;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    z-index: 1;
+    
 }
 
-.real-town {
-    margin: 57px 0;
+.welcome {
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.gorgeous {
+    margin-bottom: 50px;
+}
+
+.sedona {
+    margin-bottom: 60px;
+  
+}
+
+.mask {
+   position: absolute;
+   height: 60px;
+   top: 452.5px;
+    
+}
+
+.who-is-who {
+    text-align: center;
+}
+
+.h2 {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.real-town{
+    margin: 60px 0;
 }
 
 .real-town-text {
     float: left;
-    width: 256px;
+    width: 33.33%;
     background-color: #81b3d2;
     color: #fff;
     text-align: center;
-    height: 255px;
+    height: 256px;
 }
 
 .real-town-img {
     float: right;
-    width: 512px;
+    width: 66.66;
     height: 254px;
+    background: #616637;
 }
 
 .super1 {
@@ -83,16 +160,18 @@ h3 {
 
 .hell-img {
     float: left;
-    width: 512px;
+    width: 66.66%;
+    background-color: #926d5b;
+    height: 254px;
 }
 
 .hell-text {
     float: right;
-    width: 256px;
+    width: 33.33%;
     background-color: #81b3d2;
     color: #fff;
     text-align: center;
-    height: 255px;
+    height: 256px;
 }
 
 .super2 {
@@ -108,7 +187,18 @@ h3 {
 }
 
 .interests {
-    padding: 55px 0;
+    text-align: center;
+}
+
+.question {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.interests {
+    padding-top: 55px;
+    margin-bottom: 140px;
     
 }
 
@@ -120,9 +210,25 @@ h3 {
 
 .booking {
     position: absolute;
-    left: 100px;
-    
-    width: 567px;
+    top: -128px;
+    left: 25%;
+    width: 48%;
+    margin-top: 52px;
+     background-color: #ffffff;
+}
+
+.booking-header {
+    background-color: #988a81;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.booking-information {
+   
+    padding: 55px;
+    font-weight: 700;
 }
 
 .main-footer {
