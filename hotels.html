@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>SEDONA»</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -58,16 +58,30 @@
                         <label for="apartment">Апартаменты</label>
                         <input type="checkbox" checked name="apartment" id="apartment">
                     </fieldset>
-                    <fieldset class="price">
-                        <div class="filter-name">Стоимость в сутки (р):</div>
-                        <div class="wtf">
-                            <label for="min-price">от</label>
-                            <input type="text" name="from" value="0" id="min-price">
-                            <label for="max-price">до</label>
-                            <input type="text" name="before" value="3000" id="max-price">
-                            <input type=range id=weight min=0 value=3000 max=5000 step=100>
+
+
+                    <div class="filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="price-controls">
+                            <label class="min-price">от
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">до
+                                <input type="text" name="max-price" value="3000">
+                            </label>
                         </div>
-                    </fieldset>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                    </div>
+
+
+
                 </form>
             </div>
         </div>

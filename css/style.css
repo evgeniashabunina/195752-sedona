@@ -10,7 +10,7 @@ body {
 
 h3 {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 21px;
     color: #000000;
     font-style: bold;
     color: #fff;
@@ -22,28 +22,26 @@ h3 {
     margin: 0 auto;
 }
 
-
+/*--header--*/
 .main-navigation {
     min-width: 768px;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 .main-navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-    
-  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
 }
 
 .main-navigation li {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
-  line-height: 21px;
-   width: 20%;  
-  margin: auto;   
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    width: 20%;
+    margin: auto;
 }
 
 .main-navigation a {
@@ -52,17 +50,17 @@ h3 {
     padding-top: 22px;
     text-align: center;
     vertical-align: bottom;
-    text-decoration: none;  
+    text-decoration: none;
     color: #000000;
-    
 }
 
 .logo a {
     position: relative;
-    padding-top: 0;  
+    padding-top: 0;
     z-index: 2;
 }
 
+/*--welcome--*/
 
 .content {
     background-color: #eeeeee;
@@ -77,7 +75,6 @@ h3 {
     margin-top: -20px;
     margin-bottom: 60px;
     z-index: 1;
-    
 }
 
 .welcome {
@@ -91,14 +88,12 @@ h3 {
 
 .sedona {
     margin-bottom: 60px;
-  
 }
 
 .mask {
-   position: absolute;
-   height: 60px;
-   top: 450px;
-    
+    position: absolute;
+    height: 60px;
+    top: 450px;
 }
 
 .who-is-who {
@@ -111,7 +106,7 @@ h3 {
     text-align: center;
 }
 
-.real-town{
+.real-town {
     margin: 60px 0;
 }
 
@@ -121,13 +116,16 @@ h3 {
     background-color: #81b3d2;
     color: #fff;
     text-align: center;
-    height: 256px;
+    padding: 43px 0;
+    height: 170px;
+    
+    
 }
 
 .real-town-img {
     float: right;
-    width: 66.66;
-    height: 254px;
+    width: 66.66%;
+   height: 256px;
     background: #616637;
 }
 
@@ -141,8 +139,8 @@ h3 {
     font-size: 14px;
     vertical-align: center;
     width: 33.33%;
-    margin: 0 auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .having b,
@@ -154,6 +152,11 @@ h3 {
     max-width: 100%;
 }
 
+.bold {
+    font-size: 21px;
+    line-height: 21px;
+}
+
 .hell {
     margin-bottom: 50px 0;
 }
@@ -162,7 +165,7 @@ h3 {
     float: left;
     width: 66.66%;
     background-color: #926d5b;
-    height: 254px;
+    height: 256px;
 }
 
 .hell-text {
@@ -171,14 +174,14 @@ h3 {
     background-color: #81b3d2;
     color: #fff;
     text-align: center;
-    height: 256px;
+   height: 170px;
+    padding: 43px 0;
 }
 
 .super2 {
     font-size: 0;
     margin: 47px 0;
 }
-
 
 .clearfix::after {
     content: "";
@@ -199,7 +202,6 @@ h3 {
 .interests {
     padding-top: 55px;
     margin-bottom: 140px;
-    
 }
 
 .map {
@@ -214,7 +216,7 @@ h3 {
     left: 25%;
     width: 48%;
     margin-top: 52px;
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .booking-header {
@@ -227,7 +229,6 @@ h3 {
 }
 
 .booking-information {
-   
     padding: 55px;
     font-weight: 700;
 }
@@ -241,55 +242,119 @@ h3 {
     padding: 10px;
     width: 70%;
     margin-bottom: 35px;
-    margin-left: 20px;
-
+    margin-left: 4%;
+    border: none;
 }
 
-.booking-information  .people input {
+.booking-information .people input {
     width: 5%;
     margin: 0;
 }
 
 .old {
-    float:left;
+    float: left;
     width: 50%;
 }
 
 .young {
     float: right;
-     width: 50%;
+    width: 50%;
     text-align: right;
-    
-}
-
-.text {
-    padding-right: 20px;
+   
 }
 
 .sbm-btm {
     display: inline-block;
-font-family: "PT Sans", "Arial", sans-serif;
-text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
     font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: none;
-  outline: none;
-  cursor: pointer;
+    color: #ffffff;
+    background-color: #81b3d2;
+    border: none;
+    outline: none;
+    cursor: pointer;
     font-size: 21px;
     line-height: 26px;
-
-  text-align: center;
+    text-align: center;
     width: 80%;
-    margin-bottom: 55px; 
+    margin-bottom: 55px;
     padding: 20px 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
 }
+
+.btn {
+  background-color: #f5f5f5;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    font-size: 21px;
+}
+
+input .text {
+     font-size: 21px;
+}
+
+/*--hotels--*/
+
+.choose {
+    background: url(/img/filter%20background.jpg)
+}
+
+.input1 {
+    float: left;
+    width: 152px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.input2 {
+    float: left;
+    width: 138px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 87px;
+}
+
+
+
+
+
+
+.search {
+    float: left;
+    width: 152px;
+}
+
+.sort-list {
+    float: left;
+    width: 371px;
+}
+
+.arrows {
+    float: right;
+    width: 35px;
+}
+
+.hotel {
+    margin: 31px 0;
+}
+
+.hotel-image {
+    float: left;
+    width: 152px;
+}
+
+.product-text-uppercase {
+    float: left;
+    width: 371px;
+}
+
+/*--footer--*/
 
 .main-footer {
     padding: 55px 0;
 }
+
 
 
 .footer-hashtag {
@@ -308,5 +373,4 @@ text-transform: uppercase;
 .footer-copyright {
     float: right;
     width: 33.33%;
-    
 }
