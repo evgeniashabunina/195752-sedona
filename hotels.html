@@ -11,7 +11,6 @@
 <body>
     <header class="main-header">
         <div class="container clearfix">
-            <div class="center">
                 <nav class="main-navigation">
                     <ul>
                         <li>
@@ -33,7 +32,6 @@
                     </ul>
                 </nav>
                 </div>
-            </div>
         </div>
     </header>
     <div class="container clearfix">
@@ -42,21 +40,33 @@
                 <form action="#" method="get">
                     <fieldset class="input1">
                         <div class="filter-name">Инфраструктура:</div>
-                        <label for="pool">Бассейн</label>
+                        <div class="input-block">
                         <input type="checkbox" checked name="pool" id="pool">
-                        <label for="parking">Парковка</label>
+                        <label for="pool">Бассейн</label>
+                            </div>
+                        <div class="input-block">
                         <input type="checkbox" name="parking" id="parking">
-                        <label for="wifi">wi-fi</label>
+                        <label for="parking">Парковка</label>
+                        </div>
+                        <div class="input-block">
                         <input type="checkbox" name="wi-fi" id="wifi">
+                        <label for="wifi">wi-fi</label>
+                        </div>
                     </fieldset>
                     <fieldset class="input2">
                         <div class="filter-name">Тип жилья:</div>
-                        <label for="hostel">Гостиница</label>
+                        <div class="input-block">
                         <input type="checkbox" checked name="hostel" id="hostel">
-                        <label for="motel">Мотель</label>
+                        <label for="hostel">Гостиница</label>
+                        </div>
+                        <div class="input-block">
                         <input type="checkbox" checked name="motel" id="parking">
-                        <label for="apartment">Апартаменты</label>
+                        <label for="motel">Мотель</label>
+                        </div>
+                        <div class="input-block">
                         <input type="checkbox" checked name="apartment" id="apartment">
+                        <label for="apartment">Апартаменты</label>
+                        </div>    
                     </fieldset>
 
 
@@ -80,21 +90,18 @@
                         <button class="btn-transparent" type="submit">Показать</button>
                     </div>
 
-
-
                 </form>
             </div>
         </div>
         <div class="center">
             <div class="sort clearfix">
-
                 <span class="search">Найдено: 3 </span>
                 <ul class="sort-list">
                     <li>
-                        <a href="#">Сортировка:</a>
+                        <a class="disabled" href="#">Сортировка:</a>
                     </li>
                     <li>
-                        <a href="#">По цене</a>
+                        <a class="active" href="#">По цене</a>
                     </li>
                     <li>
                         <a href="#">По типу</a>
@@ -114,7 +121,8 @@
                     <div class="hotel-image">
                         <a href="#"><img src="img/hotel1.jpg"></a>
                     </div>
-
+                    
+                    <div class="product-text">       
                     <div class="product-text-uppercase">
                         <a href="#">Amara resort & spa </a>
                     </div>
@@ -124,11 +132,12 @@
                         <span class="what-price">от 3500 р.</span>
                     </div>
                     <div class="other">
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                        <a class="btm-1" href="#">Подробнее</a>
+                        <a class="btm-2" href="#">Забронировать</a>
+                    </div>
                     </div>
                     <div class="rating">
-                        <div class="stars"></div>
+                        <div class="stars1"></div>
                         <div class="rating-box">рейтинг 8,5</div>
                     </div>
                 </article>
@@ -137,6 +146,7 @@
                         <a href="#"><img src="img/hotel2.jpg"></a>
                     </div>
 
+                    <div class="product-text"> 
                     <div class="product-text-uppercase">
                         <a href="#">Desert quail inn</a>
                     </div>
@@ -146,11 +156,12 @@
                         <span class="what-price">от 2000 р.</span>
                     </div>
                     <div class="other">
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                        <a class="btm-1" href="#">Подробнее</a>
+                        <a class="btm-2" href="#">Забронировать</a>
+                    </div>
                     </div>
                     <div class="rating">
-                        <div class="stars"></div>
+                        <div class="stars2"></div>
                         <div class="rating-box">рейтинг 8,9</div>
                     </div>
                 </article>
@@ -159,6 +170,7 @@
                         <a href="#"><img src="img/hotel3.jpg"></a>
                     </div>
 
+                    <div class="product-text"> 
                     <div class="product-text-uppercase">
                         <a href="#">villas at poco diablo</a>
                     </div>
@@ -168,11 +180,12 @@
                         <span class="what-price">от 4000 р.</span>
                     </div>
                     <div class="other">
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                        <a class="btm-1" href="#">Подробнее</a>
+                        <a class="btm-2" href="#">Забронировать</a>
+                    </div>
                     </div>
                     <div class="rating">
-                        <div class="stars"></div>
+                        <div class="stars3"></div>
                         <div class="rating-box">рейтинг 9,2</div>
                     </div>
                 </article>
@@ -191,7 +204,7 @@
             </section>
             <section class="footer-copyright">
                 <p class="by">Website by</p>
-                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+                <a class="btn1" href="https://htmlacademy.ru">HTML Academy</a>
             </section>
         </div>
     </footer>
