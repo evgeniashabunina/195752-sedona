@@ -8,13 +8,8 @@ body {
     background: #f2f2f2;
 }
 
-h3 {
-    font-size: 21px;
-    line-height: 21px;
-    color: #000000;
-    font-style: bold;
-    color: #fff;
-}
+
+
 
 .container {
     max-width: 1200px;
@@ -23,14 +18,16 @@ h3 {
     background: #ffffff;
 }
 
-.wrapper {
-    background: #ffffff;
+h3 {
+    font-size:21px;
+    line-height: 21px;
 }
+
 
 /*--sprite--*/
 
 .sprite {
-    background-image: url("/../icons/spritesheet.png");
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -59,54 +56,77 @@ h3 {
     background-position: -203px -20px;
 }
 
+.sprite-check1 {
+    width: 26px;
+    height: 20px;
+    background-position: -269px -20px;
+}
+
+.sprite-f-opasity {
+    width: 10px;
+    height: 19px;
+    background-position: -335px -20px;
+}
+
 .sprite-fb {
     width: 10px;
     height: 19px;
-    background-position: -269px -20px;
+    background-position: -385px -20px;
 }
 
 .sprite-html {
     width: 113px;
     height: 39px;
-    background-position: -319px -20px;
+    background-position: -435px -20px;
 }
 
 .sprite-htmldown {
     width: 113px;
     height: 39px;
-    background-position: -472px -20px;
+    background-position: -588px -20px;
 }
 
 .sprite-htmlhvr {
     width: 113px;
     height: 39px;
-    background-position: -625px -20px;
+    background-position: -741px -20px;
 }
 
 .sprite-kube {
     width: 22px;
     height: 22px;
-    background-position: -778px -20px;
+    background-position: -894px -20px;
 }
 
 .sprite-star {
     width: 17px;
     height: 17px;
-    background-position: -840px -20px;
+    background-position: -956px -20px;
+}
+
+.sprite-t-opasity {
+    width: 17px;
+    height: 15px;
+    background-position: -1013px -20px;
 }
 
 .sprite-tweet {
     width: 17px;
     height: 15px;
-    background-position: -897px -20px;
+    background-position: -1070px -20px;
 }
 
 .sprite-youtube {
     width: 20px;
     height: 16px;
-    background-position: -954px -20px;
+    background-position: -1127px -20px;
 }
 
+.sprite-yu-opasity {
+    width: 20px;
+    height: 16px;
+    background-position: -1187px -20px;
+}
 
 
 
@@ -169,31 +189,31 @@ h3 {
     text-align: center;
     background-color: #a5bac9;
     margin-top: -20px;
-    margin-bottom: 69px;
+    margin-bottom: 60px;
     z-index: 1;
     background-size: cover;
 }
 
 .welcome {
-    padding-top: 70px;
-    margin-bottom: 10px;
+    padding-top: 76px;
+    margin-bottom: 6px;
 }
 
 .gorgeous {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
 }
 
 .sedona {
-    margin-bottom: 60px;
+    margin-bottom: 49px;
 }
 
 .mask {
-    background: url("../img/mask.png") center;
-    width: 101%;
+    background: url("../img/mask.png") no-repeat center;
+    width: 100%;
     position: absolute;
-    height: 60px;
+    height: 63px;
     bottom: -1px;
-    background-size: cover;
+    background-size: 100% 100%;
    
 }
 
@@ -203,16 +223,21 @@ h3 {
 
 .who-is-who {
     text-align: center;
+    line-height: 24px;
 }
 
 .h2 {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 30px;
     text-align: center;
 }
 
+.par {
+    line-height: 53px;
+}
+
 .real-town {
-    margin: 60px 0;
+    margin: 37px 0;
 }
 
 .real-town-text {
@@ -221,9 +246,9 @@ h3 {
     background-color: #81b3d2;
     color: #fff;
     text-align: center;
-    padding: 43px 0;
-    height: 170px;
-    
+    padding: 33px 0;
+    height: 190px;
+    line-height: 21px;
     
 }
 
@@ -313,7 +338,7 @@ h3 {
 
 .map {
     position: relative;
-    background: url(/img/map.jpg);
+    background: url(/img/map.jpg) no-repeat center;
     height: 475px;
 }
 
@@ -369,7 +394,7 @@ h3 {
 .calendar1 {
     position: absolute;
     content: "";
-    background: url("/icons/spritesheet.png");
+    background: url("/icons/spritesheet.png") no-repeat center;
     right: 70px;
     top: 140px;
     cursor: pointer;
@@ -385,7 +410,7 @@ h3 {
     position: absolute;
     content: "";
     background-color: aqua;
-    background: url("/icons/spritesheet.png");
+    background: url("/icons/spritesheet.png") no-repeat center;
     right: 70px;
     top: 215px;
     cursor: pointer;
@@ -398,8 +423,8 @@ h3 {
 
 .calendar1:hover,
 .calendar2:hover {
-    background: url("/icons/spritesheet.png");
-     width: 21px;
+    background: url("/icons/spritesheet.png") ;
+    width: 21px;
     height: 22px;
     background-position: -142px -20px;
 }
@@ -569,8 +594,11 @@ h3 {
     display: block;
     width: 15px;
     height: 15px;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
+    background: url("/icons/spritesheet.png");
+    
+     width: 22px;
+    height: 22px;
+    background-position: -894px -20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -584,9 +612,9 @@ h3 {
     left: -2px;
     background-image: url("/../icons/spritesheet.png");
     background-repeat: no-repeat;
-    width: 26px;
-    height: 20px;
-    background-position: -20px -20px;
+     width: 26px;
+    height: 22px;
+    background-position: -202px -18px;
     
 }
 
@@ -798,10 +826,8 @@ h3 {
 
 
 .hotel {
-    
     padding: 30px 70px;
     border-top: 2px solid #000000;
-    
 }
 
 .hotel-image {
@@ -909,32 +935,27 @@ h3 {
 
 /*--footer--*/
 
-.main-footer {
-    padding: 55px 0;
-    height: 120px;
-    
-}
-
-
 .footer-hashtag {
     float: left;
     width: 33.33%;
     font-size: 21px;
     font-weight: 700;
     text-align: center;
+    padding: 50px 0;
 }
 
 .footer-social {
     float: left;
     width: 33.33%;
     text-align: center;
+    padding: 50px 0;
 }
 
 .footer-copyright {
     position: relative;
     float: right;
     width: 33.33%;
-    
+    padding: 50px 0;
 }
 
 .social-btn {
@@ -954,26 +975,38 @@ h3 {
     background-color:  #669ec0;
 }
 
-.social-btn:active {
+
+.social-btn-tweet {
+  background-position: -1055px -6px;
+}
+
+.social-btn-tweet:active {
     background-color:  #5496bd;
+    background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
+    background-position: -998px -6px;
   
 }
 
-
-.social-btn-tweet {
- background-position: -880px -5px;
+.social-btn-fb {
+   background-position: -368px -8px;
 }
 
-.social-btn-fb {
-   background-position: -253px -5px;
+.social-btn-fb:active {
+    background-color:  #5496bd;
+    background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
+    background-position: -318px -8px;
+  
 }
 
 .social-btn-youtube {
- background-position: -941px -5px;
+ background-position: -1115px -5px;
 }
 
 .social-btn-youtube:active {
- opacity: 0.2;
+    background-color:  #5496bd;
+    background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
+    background-position: -1175px -5px;
+  
 }
 
 .copyright {
@@ -1007,8 +1040,16 @@ h3 {
   background: url("/../icons/spritesheet.png") no-repeat center;
   width: 115px;
   height: 39px;
- background-position: -319px -20px;
+  background-position: -435px -20px;
     
 }
 
+.btn1:hover { 
+    background-position: -741px -20px;
+}
+
+.btn1:active {
+    background-position: -588px -20px;
+}
+    
 
