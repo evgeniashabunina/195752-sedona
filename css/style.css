@@ -9,8 +9,6 @@ body {
 }
 
 
-
-
 .container {
     max-width: 1200px;
     min-width: 768px;
@@ -174,6 +172,18 @@ h3 {
 
 .main-navigation a:active {
     color: #b2b2b2;
+}
+
+.active-a  {
+    color: #766357;
+}
+
+.active-a:hover {
+    color: #604e43;
+}
+
+.active-a:active {
+    color: #e1ddda;
 }
 
 /*--welcome--*/
@@ -557,11 +567,13 @@ h3 {
     margin-bottom: 5px;
 }
 
+
+
 .input1 {
     float: left;
     width: 20%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     color: #ffffff;
     border: 0;
     
@@ -576,7 +588,7 @@ h3 {
     float: left;
     width: 24%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     color: #ffffff;
     border: 0;
 }
@@ -604,34 +616,28 @@ h3 {
     height: 15px;
     background: url("/icons/spritesheet.png");
     
-     width: 22px;
+     width: 26px;
     height: 22px;
     background-position: -894px -20px;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.input1 [type="checkbox"]:checked + label::after,
-.input2 [type="checkbox"]:checked + label::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-image: url("/../icons/spritesheet.png");
-    background-repeat: no-repeat;
-     width: 26px;
-    height: 22px;
-    background-position: -202px -18px;
     
 }
+
+.input1 [type="checkbox"]:checked+label::before,
+.input2 [type="checkbox"]:checked+label::before {
+    background-position: -203px -20px;
+}
+
+
 
 
 .filter-range {
     margin-top: 30px;
     float: right;
     width: 30%;
-      color: #ffffff;
+    color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -697,13 +703,11 @@ h3 {
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -715,7 +719,7 @@ h3 {
 }
 
 .range-toggle {
-      position: absolute;
+  position: absolute;
   top: -9px;
 
   width: 4px;
@@ -723,7 +727,7 @@ h3 {
 
   background: #ababab;
   border: 8px solid #ffffff;
-      border-radius: 50%;
+  border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 
@@ -765,13 +769,19 @@ h3 {
   background: #ffffff;
 }
 
+.sort {
+    padding: 35px 0;
+}
 
 .search {
     float: left;
-   width: 13%;
+    width: 120px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    padding-left: 72px;
+    padding-right: 50px;
+     text-align: bottom;
     
 }
 
@@ -782,7 +792,7 @@ h3 {
     padding: 0;
     list-style: none;
     font-size: 0;
-    width: 30%;
+    width: 360px;
 }
 
 .sort-list li {
@@ -790,19 +800,31 @@ h3 {
     vertical-align: top;
     font-size: 12px;
     line-height: 18px;
-    width: 30%;
+    padding-right: 35px;
     margin: auto;
 }
 
+.sort-list li:last-child {
+    padding-right: 0;
+    
+}
+
 .sort-list a {
-    display: block;
-    padding-top: 22px;
-    text-align: center;
+    display: inline-block;
+   
     vertical-align: bottom;
     text-decoration: none;
     color: #b1b1b1;
     border-bottom: 2px dotted #81b3d2;
-    border
+}
+
+.sort-list a:hover {
+    color: #81b3d2;
+}
+
+.sort-list a:active {
+    color: #000000;
+    border: none;
 }
 
 .sort-list .active {
@@ -820,22 +842,56 @@ h3 {
 
 .arrows {
     float: right;
-    width: 3%;
-    background: url("/icons/spritesheet.png") no-repeat center;
+    width: 37px;
+    margin: auto;
+    padding-right: 45px;
+    font-size: 0;
+
+}
+    
+.arrow-up {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 5px 8.7px 5px;
+border-color: transparent transparent #cccccc transparent;
+display: inline-block;
+    margin-right: 10px;
+
    
 }
 
-.arrow-up {
-    
-    width: 11px;
-    height: 10px;
-    background-position: -526px -20px;
+.arrow-down {
+   width: 0;
+height: 0;
+border-style: solid;
+border-width: 8.7px 5px 0 5px;
+border-color: #cccccc transparent transparent transparent;
+display: inline-block;
 }
 
+.arrow-down:hover{
+    border-color: #000000  transparent transparent  transparent ;
+}
+
+.arrow-up:hover{
+    border-color:   transparent transparent #000000  transparent ;
+}
+.arrow-down:active{
+    border-color: #81b3d2  transparent transparent  transparent ;
+}
+
+.arrow-up:active {
+    border-color:   transparent transparent #81b3d2  transparent ;
+}
 
 .hotel {
     padding: 30px 70px;
-    border-top: 2px solid #000000;
+    border-top: 1px solid #e5e5e5;
+}
+
+.hotel:last-child{
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-image {
@@ -881,6 +937,15 @@ h3 {
     margin-top: 10px;
 }
 
+.btm-1:hover {
+    background: #669ec0;
+}
+
+.btm-1:active {
+    background: #5496bd;
+    color: #7aadcb;
+}
+
 .btm-2 {
     display: inline-block;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -899,6 +964,16 @@ h3 {
     padding: 3px 0; 
 }
 
+.btm-2:hover {
+    background: #604e43;
+}
+
+.btm-2:active {
+    background: #503e33;
+    color: #857871;
+}
+
+
 .rating {
     float: right;
     width: 10%;
@@ -910,14 +985,18 @@ h3 {
     color: #666666;
 }
 
-.stars1 {
-    background: url("/icons/spritesheet.png") no-repeat center;
-    
-    width: 89px;
-    height: 17px;
-    background-position: -340px -20px;
+.stars {
     margin-bottom: 50px;
-    
+    text-align: right;
+}
+
+.star {
+    display: inline-block;
+    background: url("../icons/spritesheet.png") no-repeat center;
+    width: 17px;
+    height: 17px;
+    background-position: -956px -20px;
+   
 }
 
 .stars2 {
