@@ -25,7 +25,7 @@ h3 {
 /*--sprite--*/
 
 .sprite {
-    background-image: url(spritesheet.png);
+    background-image: url(../icons/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -174,15 +174,15 @@ h3 {
     color: #b2b2b2;
 }
 
-.active-a  {
+.main-navigation a.active  {
     color: #766357;
 }
 
-.active-a:hover {
+.main-navigation a.active:hover {
     color: #604e43;
 }
 
-.active-a:active {
+.main-navigation a.active:active {
     color: #e1ddda;
 }
 
@@ -240,10 +240,11 @@ h3 {
     font-size: 21px;
     line-height: 30px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .par {
-    line-height: 53px;
+    margin-bottom: 52px;
 }
 
 .real-town {
@@ -263,7 +264,7 @@ h3 {
 }
 
 .real-town-img {
-    background-image: url("/../img/photo1.jpg");
+    background-image: url("../img/photo1.jpg");
     float: right;
     width: 66.66%;
     height: 256px;
@@ -303,7 +304,7 @@ h3 {
 }
 
 .hell-img {
-    background-image: url("/../img/photo2.jpg");
+    background-image: url("../img/photo2.jpg");
     float: left;
     width: 66.66%;
     background-color: #926d5b;
@@ -346,7 +347,7 @@ h3 {
 
 .map {
     position: relative;
-    background: url(/img/map.jpg) no-repeat center;
+    background: url(../img/map.jpg) no-repeat center;
     height: 475px;
 }
 
@@ -356,7 +357,9 @@ h3 {
     width: 570px;
     margin-top: 52px;
     background-color: #ffffff;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 
 .booking-header {
@@ -403,8 +406,8 @@ h3 {
     background: #f2f2f2;
 }
 
-.old input:active,
-.young input:active{
+.old input:focus,
+.young input:focus{
     background: #f2f2f2;
     outline: none;
 }
@@ -412,7 +415,7 @@ h3 {
 .calendar1 {
     position: absolute;
     content: "";
-    background: url("/icons/spritesheet.png") no-repeat center;
+    background: url("../icons/spritesheet.png") no-repeat center;
     right: 70px;
     top: 140px;
     cursor: pointer;
@@ -428,7 +431,7 @@ h3 {
     position: absolute;
     content: "";
     background-color: aqua;
-    background: url("/icons/spritesheet.png") no-repeat center;
+    background: url("../icons/spritesheet.png") no-repeat center;
     right: 70px;
     top: 215px;
     cursor: pointer;
@@ -441,7 +444,7 @@ h3 {
 
 .calendar1:hover,
 .calendar2:hover {
-    background: url("/icons/spritesheet.png") ;
+    background: url("../icons/spritesheet.png") ;
     width: 21px;
     height: 22px;
     background-position: -142px -20px;
@@ -450,7 +453,7 @@ h3 {
 
 .calendar1:active,
 .calendar2:active {
-    background: url("/icons/spritesheet.png");
+    background: url("../icons/spritesheet.png");
     width: 21px;
     height: 22px;
     background-position: -81px -20px;
@@ -551,7 +554,7 @@ h3 {
 
 .choose {
     position: relative;
-    background: url(/../img/filter%20background.jpg);
+    background: url(../img/filter%20background.jpg);
     height: 217px;
     margin-top: -20px;
     background-color: #515f69;
@@ -614,7 +617,7 @@ h3 {
     display: block;
     width: 15px;
     height: 15px;
-    background: url("/icons/spritesheet.png");
+    background: url("../icons/spritesheet.png");
     
      width: 26px;
     height: 22px;
@@ -1000,7 +1003,7 @@ display: inline-block;
 }
 
 .stars2 {
-     background: url("/icons/spritesheet.png") no-repeat center;
+     background: url("../icons/spritesheet.png") no-repeat center;
      
      width: 40px;
      height: 17px;
@@ -1010,7 +1013,7 @@ display: inline-block;
 }
 
 .stars3 {
-    background: url("/icons/spritesheet.png") no-repeat center;
+    background: url("../icons/spritesheet.png") no-repeat center;
     
     width: 65px;
     height: 17px;
@@ -1043,6 +1046,7 @@ display: inline-block;
     float: right;
     width: 33.33%;
     padding: 50px 0;
+    text-align: center;
 }
 
 .social-btn {
@@ -1055,7 +1059,7 @@ display: inline-block;
   height: 47px;
   margin: 0 4px;
 
-  background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
+  background: #81b3d2 url("../icons/spritesheet.png") no-repeat center;
 }
 
 .social-btn:hover {
@@ -1069,7 +1073,6 @@ display: inline-block;
 
 .social-btn-tweet:active {
     background-color:  #5496bd;
-    background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
     background-position: -998px -6px;
   
 }
@@ -1080,7 +1083,6 @@ display: inline-block;
 
 .social-btn-fb:active {
     background-color:  #5496bd;
-    background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
     background-position: -318px -8px;
   
 }
@@ -1091,7 +1093,6 @@ display: inline-block;
 
 .social-btn-youtube:active {
     background-color:  #5496bd;
-    background: #81b3d2 url("/../icons/spritesheet.png") no-repeat center;
     background-position: -1175px -5px;
   
 }
