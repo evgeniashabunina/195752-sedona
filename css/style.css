@@ -236,11 +236,11 @@ h3 {
     line-height: 24px;
 }
 
-.h2 {
+.title {
     font-size: 21px;
-    line-height: 30px;
+    line-height: 24px;
     text-align: center;
-    margin-bottom: 30px;
+    padding-bottom: 13px;
 }
 
 .par {
@@ -260,6 +260,14 @@ h3 {
     padding: 33px 0;
     height: 190px;
     line-height: 21px;
+}
+
+.prg {
+    margin-top: 24px;
+    width: 71%;
+    margin-left: auto;
+    margin-right: auto;
+        
     
 }
 
@@ -282,16 +290,32 @@ h3 {
     vertical-align: top;
     width: 33.33%;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 11px;
+    margin-top: 23px;
 }
 
 .having b,
 .having p {
     display: block;
+    margin-top: 23px;
 }
 
-.having .about {
-    max-width: 100%;
+.bold {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.having .first {
+    width: 76%;
+    margin: 0 auto;
+    margin-top: 23px;
+    
+}
+
+.having .second {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 23px;
 }
 
 .bold {
@@ -323,7 +347,7 @@ h3 {
 
 .super2 {
     font-size: 0;
-    margin: 47px 0;
+    padding-bottom: 46px;
 }
 
 .clearfix::after {
@@ -341,8 +365,12 @@ h3 {
 
 .interests {
     text-align: center;
-    padding-top: 55px;
+    padding-top: 52px;
     margin-bottom: 140px;
+}
+
+.please {
+    margin-top: 28px;
 }
 
 .map {
@@ -355,7 +383,7 @@ h3 {
     position: absolute;
     top: -128px;
     width: 570px;
-    margin-top: 52px;
+    margin-top: 38px;
     background-color: #ffffff;
     left: 50%;
     transform: translateX(-50%);
@@ -363,10 +391,10 @@ h3 {
 }
 
 .booking-header {
-    background-color: #988a81;
+    background-color: #766357;
     text-align: center;
-    padding: 28px 0;
-    font-size: 21px;
+    padding: 33px 0;
+    font-size: 23px;
     font-weight: 700;
     color: #ffffff;
 }
@@ -381,14 +409,14 @@ h3 {
 .booking-information input  {
    position: relative;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 15px;
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
     background-color: #f5f5f5;
     padding: 10px;
-    width: 340px;
-    margin-bottom: 35px;
-    margin-left: 3px;
+    width: 320px;
+    margin-bottom: 31px;
+    margin-left: 19px;
     border: none;
     outline: none;
 }
@@ -422,7 +450,7 @@ h3 {
     
     width: 21px;
     height: 22px;
-    background-position: -20px -20px;
+    background-position: -15px -12px;
 }
 
 
@@ -438,7 +466,7 @@ h3 {
     
     width: 21px;
     height: 22px;
-    background-position: -20px -20px;
+    background-position: -15px -20px;
 }
 
 
@@ -486,7 +514,7 @@ h3 {
     display: inline-block;
     font-size: 14px;
     line-height: 26px;
-    padding-right: 30px;
+    padding-right: 42px;
 }
 
 .sbm-btm {
@@ -502,10 +530,10 @@ h3 {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    width: 460px;
+    width: 457px;
     margin-bottom: 55px;
-    padding: 20px 0;
-    margin-left: 10%;
+    padding: 14px 0;
+    margin-left: 56px;
 }
 
 .sbm-btm:hover {
@@ -560,7 +588,7 @@ h3 {
     background-color: #515f69;
 }
 .center {
-    width: 88%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -574,8 +602,8 @@ h3 {
 
 .input1 {
     float: left;
-    width: 20%;
-    margin-top: 30px;
+    width: 22%;
+    margin-top: 22px;
     margin-bottom: 0;
     color: #ffffff;
     border: 0;
@@ -590,7 +618,7 @@ h3 {
 .input2 {
     float: left;
     width: 24%;
-    margin-top: 30px;
+    margin-top: 22px;
     margin-bottom: 0;
     color: #ffffff;
     border: 0;
@@ -606,7 +634,7 @@ h3 {
     display: block;
     margin: 10px 0;
     line-height: 20px;
-    padding-left: 30px;
+    padding-left: 40px;
     position: relative;
     cursor: pointer;
 }
@@ -645,7 +673,7 @@ h3 {
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1031,21 +1059,21 @@ display: inline-block;
     font-size: 21px;
     font-weight: 700;
     text-align: center;
-    padding: 50px 0;
+    padding: 41px 0;
 }
 
 .footer-social {
     float: left;
     width: 33.33%;
     text-align: center;
-    padding: 50px 0;
+    padding: 41px 0;
 }
 
 .footer-copyright {
     position: relative;
     float: right;
     width: 33.33%;
-    padding: 50px 0;
+    padding: 35px 0;
     text-align: center;
 }
 
@@ -1057,7 +1085,6 @@ display: inline-block;
   display: inline-block;
   width: 47px;
   height: 47px;
-  margin: 0 4px;
 
   background: #81b3d2 url("../icons/spritesheet.png") no-repeat center;
 }
