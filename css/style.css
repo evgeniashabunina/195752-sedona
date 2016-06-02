@@ -602,7 +602,7 @@ h3 {
 
 .input1 {
     float: left;
-    width: 22%;
+    width: 21.5%;
     margin-top: 22px;
     margin-bottom: 0;
     color: #ffffff;
@@ -634,7 +634,7 @@ h3 {
     display: block;
     margin: 10px 0;
     line-height: 20px;
-    padding-left: 40px;
+    padding-left: 41px;
     position: relative;
     cursor: pointer;
 }
@@ -665,15 +665,15 @@ h3 {
 
 
 .filter-range {
-    margin-top: 30px;
+    margin-top: 26px;
     float: right;
-    width: 30%;
+    width: 31%;
     color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 16px;
@@ -682,7 +682,7 @@ h3 {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
 
@@ -801,7 +801,7 @@ h3 {
 }
 
 .sort {
-    padding: 35px 0;
+    padding: 29px 0;
 }
 
 .search {
@@ -810,8 +810,8 @@ h3 {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    padding-left: 72px;
-    padding-right: 50px;
+    padding-left: 70px;
+    padding-right: 45px;
      text-align: bottom;
     
 }
@@ -824,6 +824,7 @@ h3 {
     list-style: none;
     font-size: 0;
     width: 360px;
+    padding-bottom: 6px;
 }
 
 .sort-list li {
@@ -917,7 +918,7 @@ display: inline-block;
 }
 
 .hotel {
-    padding: 30px 70px;
+    padding: 27px 70px;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -927,14 +928,14 @@ display: inline-block;
 
 .hotel-image {
     float: left;
-    width: 13%;
+    width: 137px;
    
 }
 
 .product-text {
     float: left;
     width: 30%;
-    margin-left: 2%;
+    margin-left: 28px;
     
 }
 
@@ -963,9 +964,9 @@ display: inline-block;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    width: 35%;
-    padding: 3px 0; 
-    margin-top: 10px;
+    width: 112px;
+    padding: 6px 0; 
+    margin-top: 13px;
 }
 
 .btm-1:hover {
@@ -991,7 +992,7 @@ display: inline-block;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    width: 45%;
+    width: 144px;
     padding: 3px 0; 
 }
 
@@ -1152,7 +1153,7 @@ display: inline-block;
   height: 47px;
   margin: 0 4px;
 
-  background: url("/../icons/spritesheet.png") no-repeat center;
+  background: url("../icons/spritesheet.png") no-repeat center;
   width: 115px;
   height: 39px;
   background-position: -435px -20px;
